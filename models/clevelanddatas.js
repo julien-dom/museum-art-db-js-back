@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const clevelandSchema = mongoose.Schema({
+    id: Number,
     author: String,
     title: String,
     image: String,
