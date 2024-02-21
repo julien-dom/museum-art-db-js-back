@@ -2,11 +2,14 @@ const mongoose = require('mongoose');
 
 const metSchema = mongoose.Schema({
     objectID: Number,
-    author: String,
+    artistDisplayName: String,
     title: String,
-    image: String,
+    primaryImageSmall: String,
     museum: String,
-    classification: String,
+    objectName: String,
+    objectDate: String,
+    dimensions: String,
+    medium: String
 });
 
 const Met = mongoose.model('metdatas', metSchema);
